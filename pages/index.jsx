@@ -40,6 +40,20 @@ export default function Index() {
           <a href="https://rune-generator.firebaseapp.com/">visit</a>
         </div>
       </section>
+
+      <section id="activities">
+        <h2>Activities</h2>
+        <div>
+          <h3>Rhyztech blog</h3>
+          <p>Techブログです。Web開発をしている中で学んだことやゲームの話をしたりします。</p>
+          <a href="https://blog.rhyztech.net/">visit</a>
+        </div>
+        <div>
+          <h3>Speaker Deck</h3>
+          <p>tech系のスライドをあげたり、splatoonのスライドをあげたりしています。</p>
+          <a href="https://speakerdeck.com/rhythm191">visit</a>
+        </div>
+      </section>
     </main>
   );
 }
