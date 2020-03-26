@@ -1,0 +1,32 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "rhyztech website",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhythm191/website.git"
+  },
+  "author": "rhythm191",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rhythm191/website/issues"
+  },
+  "homepage": "https://github.com/rhythm191/website#readme",
+  "dependencies": {
+    "next": "^9.3.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "node-sass": "^4.13.1"
+  }
+}
