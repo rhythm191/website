@@ -54,6 +54,18 @@ export default function Index() {
           <a href="https://speakerdeck.com/rhythm191">visit</a>
         </div>
       </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>
+            <a href="https://twitter.com/rhythm191">Twitter</a>
+          </li>
+          <li>
+            <a href="mailto:sac2ndg+develop@gmail.com">Mail</a>
+          </li>
+        </ul>
+      </section>
     </main>
   );
 }
