@@ -1,7 +1,14 @@
+// breakpoint
 $breakpoint-sm: 576px !default;
 $breakpoint-md: 768px !default;
 $breakpoint-lg: 992px !default;
 $breakpoint-xl: 1200px !default;
+
+// colors
+$green: #00bfa5;
+$orange: #ff9104;
+$red: #ff1744;
+$bg-black: #1c1c1c;
 
 html {
   font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -48,10 +55,7 @@ main {
   padding-bottom: 4px;
   color: #fff;
 
-  $bg-black: #1c1c1c;
-  $bg-red: #ff1744;
-
-  background-color: $bg-red;
+  background-color: $red;
 
   &::before {
     content: "";
@@ -75,7 +79,7 @@ main {
     width: 100%;
     height: 100%;
     transform-origin: left;
-    background-color: #ff1744;
+    background-color: $red;
     transform: skewX(-7deg) rotate(-11deg);
 
     @media (min-width: $breakpoint-sm) {
