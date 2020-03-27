@@ -1,3 +1,34 @@
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+
 body {
-  color: #f00;
+  font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+#hero-section {
+  width: 100%;
+
+  padding: 110px 0;
+  text-align: center;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 160px 0;
+  }
+
+  h1 {
+    font-family: "Abril Fatface", serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+
+    @media (min-width: $breakpoint-sm) {
+      font-size: 62px;
+    }
+  }
+
+  p {
+    font-size: 24px;
+  }
 }
