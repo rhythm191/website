@@ -16,6 +16,7 @@ $bg-black: #1c1c1c;
 
 %section {
   padding: 80px 0;
+  background-color: #fff;
 }
 
 @mixin cross-hedding($border-color) {
@@ -46,6 +47,7 @@ $bg-black: #1c1c1c;
   display: inline-block;
   color: $theme-color;
   font-size: 1.3rem;
+  font-weight: 600;
   padding: 0.4em 1.2em;
 
   border: 1px solid $theme-color;
@@ -96,10 +98,14 @@ h2 {
 // each section styles
 
 #hero-section {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
 
   padding: 150px 0;
   text-align: center;
+  z-index: -2;
 
   @media (min-width: $breakpoint-sm) {
     padding: 240px 0;
@@ -122,6 +128,7 @@ h2 {
 
 #about {
   position: relative;
+  margin-top: 626px;
   padding-bottom: 4px;
   color: $font-inverse-color;
 
@@ -166,6 +173,7 @@ h2 {
 
   p {
     padding: 0 1rem;
+    margin-bottom: 1.5rem;
 
     @media (min-width: $breakpoint-sm) {
       padding: 0;
