@@ -12,6 +12,54 @@ $font-color: #37474f;
 $font-inverse-color: #eceff1;
 $bg-black: #1c1c1c;
 
+// common style mixins
+
+%section {
+  padding: 80px 0;
+}
+
+@mixin cross-hedding($border-color) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 160px);
+    width: 320px;
+    height: calc(1em + 20px);
+    border: 2px solid $border-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: calc(1em + 40px);
+    border: 2px solid $border-color;
+  }
+}
+
+@mixin button($theme-color, $inverse-color) {
+  display: inline-block;
+  color: $theme-color;
+  font-size: 1.2rem;
+  padding: 0.4em 1.2em;
+
+  border: 1px solid $theme-color;
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+
+  &:hover,
+  &:focus {
+    color: $inverse-color;
+    background: $theme-color;
+    text-decoration: none;
+  }
+}
+
+// common styles
 html {
   font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   text-rendering: optimizeLegibility;
@@ -28,10 +76,6 @@ main {
   overflow: hidden;
 }
 
-%section {
-  padding: 80px 0;
-}
-
 h2 {
   font-size: 48px;
   font-weight: bold;
@@ -42,6 +86,8 @@ h2 {
     font-size: 62px;
   }
 }
+
+// each section styles
 
 #hero-section {
   width: 100%;
@@ -128,27 +174,7 @@ h2 {
   @extend %section;
 
   h2 {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: calc(50% - 160px);
-      width: 320px;
-      height: calc(1em + 20px);
-      border: 2px solid $green;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: -10px;
-      left: calc(50% - 150px);
-      width: 300px;
-      height: calc(1em + 40px);
-      border: 2px solid $green;
-    }
+    @include cross-hedding($green);
   }
 }
 
@@ -164,19 +190,21 @@ h2 {
   }
 
   a {
-    display: inline-block;
-    color: $green;
-    font-size: 1.2rem;
-    padding: 0.4em 1.2em;
+    @include button($green, #fff);
+  }
+}
 
-    border: 1px solid $green;
+#activities {
+  @extend %section;
 
-    &:hover,
-    &:focus {
-      color: #fff;
-      background: $green;
-      text-decoration: none;
-    }
+  border-top: 2px solid $red;
+
+  h2 {
+    @include cross-hedding($red);
+  }
+
+  a {
+    @include button($red, #fff);
   }
 }
 
