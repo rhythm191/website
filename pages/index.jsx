@@ -36,40 +36,62 @@ export default function Index() {
         <h2>Products</h2>
         <div className="content-wrapper">
           <div className="product-showcase">
-            <h3>Alfred-emmet</h3>
-            <p>Alfred上でEmmetの変換が使えるAlfred workflowです。</p>
-            <a href="https://www.npmjs.com/package/alfred-emmet">visit</a>
+            <div>
+              <h3>Alfred-emmet</h3>
+              <p>Alfred上でEmmetの変換が使えるAlfred workflowです。</p>
+              <a href="https://www.npmjs.com/package/alfred-emmet">visit</a>
+            </div>
+            <div className="product-showcase__image">
+              <img src="/images/alfred-emmet.png" alt="" />
+            </div>
           </div>
           <div className="product-showcase">
-            <h3>Trello mail</h3>
-            <p>
-              TrelloのボードをエクスポートできるようにするChrome拡張機能です。
-              エクスポートは「メールでエクスポート」か「クリップボードにコピー」を選ぶことができます。
-            </p>
-            <a href="https://chrome.google.com/webstore/detail/npombkniehmhjlbjnfgjkfnjfmcjnfne">
-              visit
-            </a>
+            <div>
+              <h3>Trello mail</h3>
+              <p>
+                TrelloのボードをエクスポートできるようにするChrome拡張機能です。
+                エクスポートは「メールでエクスポート」か「クリップボードにコピー」を選ぶことができます。
+              </p>
+              <a href="https://chrome.google.com/webstore/detail/npombkniehmhjlbjnfgjkfnjfmcjnfne">
+                visit
+              </a>
+            </div>
+            <div className="product-showcase__image">
+              <img src="/images/trello-mail.jpg" alt="" />
+            </div>
           </div>
           <div className="product-showcase">
-            <h3>login_kenpo</h3>
-            <p>
-              関東ITソフトウェアのMY HEALTH
-              WEBにログインしてログインボーナスを稼ぐ自動スクリプトです。
-            </p>
-            <a href="https://www.npmjs.com/package/@rhythm191/login_kenpo">visit</a>
+            <div>
+              <h3>login_kenpo</h3>
+              <p>
+                関東ITソフトウェアのMY HEALTH
+                WEBにログインしてログインボーナスを稼ぐ自動スクリプトです。
+              </p>
+              <a href="https://www.npmjs.com/package/@rhythm191/login_kenpo">visit</a>
+            </div>
           </div>
           <div className="product-showcase">
-            <h3>ルーン文字ジェネレータ</h3>
-            <p>ルーン文字の画像メーカーを作りました。</p>
-            <a href="https://rune-generator.firebaseapp.com/">visit</a>
+            <div>
+              <h3>ルーン文字ジェネレータ</h3>
+              <p>ルーン文字の画像メーカーを作りました。</p>
+              <a href="https://rune-generator.firebaseapp.com/">visit</a>
+            </div>
+            <div className="product-showcase__image">
+              <img src="/images/rune-generator.png" alt="" />
+            </div>
           </div>
           <div className="product-showcase">
-            <h3>1-Day Twit View</h3>
-            <p>
-              Twitterでつぶやいた一日分のツイートをログメールとして送るサービスです。
-              このログメールはあなたのツイートだけでなく、あなたへのリプライも一緒に表示します。
-            </p>
-            <a href="https://onedaytv.herokuapp.com/">visit</a>
+            <div>
+              <h3>1-Day Twit View</h3>
+              <p>
+                Twitterでつぶやいた一日分のツイートをログメールとして送るサービスです。
+                このログメールはあなたのツイートだけでなく、あなたへのリプライも一緒に表示します。
+              </p>
+              <a href="https://onedaytv.herokuapp.com/">visit</a>
+            </div>
+            <div className="product-showcase__image">
+              <img src="/images/1daytv.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
