@@ -87,6 +87,12 @@ h2 {
   }
 }
 
+.content-wrapper {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
 // each section styles
 
 #hero-section {
@@ -159,9 +165,6 @@ h2 {
   }
 
   p {
-    width: 100%;
-    max-width: 42rem;
-    margin: 0 auto 1rem;
     padding: 0 1rem;
 
     @media (min-width: $breakpoint-sm) {
