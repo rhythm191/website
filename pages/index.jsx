@@ -42,7 +42,7 @@ export default function Index() {
               <a href="https://www.npmjs.com/package/alfred-emmet">visit</a>
             </div>
             <div className="product-showcase__image">
-              <img src="/images/alfred-emmet.png" alt="" />
+              <img src="/images/alfred-emmet.png" alt="" width="97" />
             </div>
           </div>
           <div className="product-showcase">
@@ -99,12 +99,12 @@ export default function Index() {
       <section id="activities">
         <h2>Activities</h2>
         <div className="content-wrapper">
-          <div>
+          <div className="activity-showcase">
             <h3>Rhyztech blog</h3>
             <p>Techブログです。Web開発をしている中で学んだことやゲームの話をしたりします。</p>
             <a href="https://blog.rhyztech.net/">visit</a>
           </div>
-          <div>
+          <div className="activity-showcase">
             <h3>Speaker Deck</h3>
             <p>tech系のスライドをあげたり、splatoonのスライドをあげたりしています。</p>
             <a href="https://speakerdeck.com/rhythm191">visit</a>

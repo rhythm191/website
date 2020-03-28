@@ -45,7 +45,7 @@ $bg-black: #1c1c1c;
 @mixin button($theme-color, $inverse-color) {
   display: inline-block;
   color: $theme-color;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 0.4em 1.2em;
 
   border: 1px solid $theme-color;
@@ -185,8 +185,61 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 10px;
+  padding: 50px 10px;
   border-bottom: 1px solid $green;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 80px 30px;
+    border-bottom: none;
+  }
+
+  p {
+    margin-bottom: 2.1em;
+  }
+
+  a {
+    @include button($green, #fff);
+  }
+
+  &__image {
+    max-width: 100%;
+    margin: 20px 0 0;
+    text-align: center;
+
+    @media (min-width: $breakpoint-sm) {
+      max-width: 15em;
+      margin: 33px 0 0 20px;
+    }
+
+    img {
+      max-width: 100%;
+      @media (min-width: $breakpoint-sm) {
+        max-width: 12em;
+      }
+    }
+  }
+}
+
+#activities {
+  @extend %section;
+
+  border-top: 2px solid $red;
+
+  h2 {
+    @include cross-hedding($red);
+  }
+}
+
+.activity-showcase {
+  padding: 40px 10px;
+  border-bottom: 1px solid $red;
 
   &:last-of-type {
     border-bottom: none;
@@ -202,37 +255,6 @@ h2 {
 
   p {
     margin-bottom: 1.8em;
-  }
-
-  a {
-    @include button($green, #fff);
-  }
-
-  &__image {
-    max-width: 100%;
-    margin: 20px 0 0;
-
-    @media (min-width: $breakpoint-sm) {
-      max-width: 15em;
-      margin: 33px 0 0 20px;
-    }
-
-    img {
-      max-width: 100%;
-      @media (min-width: $breakpoint-sm) {
-        max-width: 15em;
-      }
-    }
-  }
-}
-
-#activities {
-  @extend %section;
-
-  border-top: 2px solid $red;
-
-  h2 {
-    @include cross-hedding($red);
   }
 
   a {
