@@ -6,6 +6,9 @@ export default function Index() {
       <Head>
         <title>Rhyztech</title>
         <meta name="description" content="Rhyztech is tech team powered by rhythm191" />
+        <meta name="msapplication-TileColor" content="#0078d7" />
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+        <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
       </Head>
 
       <section id="hero-section">
