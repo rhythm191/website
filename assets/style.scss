@@ -8,11 +8,14 @@ $breakpoint-xl: 1200px !default;
 $green: #00bfa5;
 $orange: #ff9104;
 $red: #ff1744;
+$font-color: #37474f;
+$font-inverse-color: #eceff1;
 $bg-black: #1c1c1c;
 
 html {
   font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   text-rendering: optimizeLegibility;
+  color: $font-color;
   line-height: 1.5;
   font-size: 14px;
 
@@ -23,6 +26,17 @@ html {
 
 main {
   overflow: hidden;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: 62px;
+  }
 }
 
 #hero-section {
@@ -53,7 +67,7 @@ main {
 #about {
   position: relative;
   padding-bottom: 4px;
-  color: #fff;
+  color: $font-inverse-color;
 
   background-color: $red;
 
@@ -94,17 +108,6 @@ main {
     background-color: $bg-black;
   }
 
-  h2 {
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 40px;
-
-    @media (min-width: $breakpoint-sm) {
-      font-size: 62px;
-    }
-  }
-
   p {
     width: 100%;
     max-width: 42rem;
@@ -113,6 +116,62 @@ main {
 
     @media (min-width: $breakpoint-sm) {
       padding: 0;
+    }
+  }
+}
+
+#products {
+  padding: 80px 0;
+
+  h2 {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc(50% - 160px);
+      width: 320px;
+      height: calc(1em + 20px);
+      border: 2px solid $green;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: calc(50% - 150px);
+      width: 300px;
+      height: calc(1em + 40px);
+      border: 2px solid $green;
+    }
+  }
+}
+
+.product-showcase {
+  padding: 40px 10px;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 60px 30px;
+  }
+
+  p {
+    margin-bottom: 1.8em;
+  }
+
+  a {
+    display: inline-block;
+    color: $green;
+    font-size: 1.2rem;
+    padding: 0.4em 1.2em;
+
+    border: 1px solid $green;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: $green;
+      text-decoration: none;
     }
   }
 }

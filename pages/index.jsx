@@ -32,12 +32,12 @@ export default function Index() {
 
       <section id="products">
         <h2>Products</h2>
-        <div>
+        <div className="product-showcase">
           <h3>Alfred-emmet</h3>
           <p>Alfred上でEmmetの変換が使えるAlfred workflowです。</p>
           <a href="https://www.npmjs.com/package/alfred-emmet">visit</a>
         </div>
-        <div>
+        <div className="product-showcase">
           <h3>Trello mail</h3>
           <p>
             TrelloのボードをエクスポートできるようにするChrome拡張機能です。
@@ -47,7 +47,7 @@ export default function Index() {
             visit
           </a>
         </div>
-        <div>
+        <div className="product-showcase">
           <h3>login_kenpo</h3>
           <p>
             関東ITソフトウェアのMY HEALTH
@@ -55,12 +55,12 @@ export default function Index() {
           </p>
           <a href="https://www.npmjs.com/package/@rhythm191/login_kenpo">visit</a>
         </div>
-        <div>
+        <div className="product-showcase">
           <h3>ルーン文字ジェネレータ</h3>
           <p>ルーン文字の画像メーカーを作りました。</p>
           <a href="https://rune-generator.firebaseapp.com/">visit</a>
         </div>
-        <div>
+        <div className="product-showcase">
           <h3>1-Day Twit View</h3>
           <p>
             Twitterでつぶやいた一日分のツイートをログメールとして送るサービスです。
