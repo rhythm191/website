@@ -317,3 +317,17 @@ h2 {
     }
   }
 }
+
+#copyright {
+  padding: 0.5rem 0;
+
+  background-color: $bg-black;
+  color: $font-inverse-color;
+  font-size: 0.8rem;
+
+  p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}

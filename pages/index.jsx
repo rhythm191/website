@@ -134,6 +134,10 @@ export default function Index() {
           </li>
         </ul>
       </section>
+
+      <section id="copyright">
+        <p>Copyright 2020 @rhythm191. All Rights Reserved.</p>
+      </section>
     </main>
   );
 }
