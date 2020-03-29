@@ -6,7 +6,7 @@ import { GA_TRACKING_ID } from "../lib/gtag";
 export default class extends Document {
   render() {
     return (
-      <html>
+      <html lang="ja">
         <Head>
           <meta name="description" content="Rhyztech is tech team powered by rhythm191" />
           <meta name="msapplication-TileColor" content="#0078d7" />
