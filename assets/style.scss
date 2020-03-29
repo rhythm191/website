@@ -1,3 +1,5 @@
+@import "./reset";
+
 // breakpoint
 $breakpoint-sm: 576px !default;
 $breakpoint-md: 768px !default;
@@ -45,10 +47,11 @@ $bg-black: #1c1c1c;
 
 @mixin button($theme-color, $inverse-color) {
   display: inline-block;
+  padding: 0.4em 1.2em;
   color: $theme-color;
   font-size: 1.3rem;
   font-weight: 600;
-  padding: 0.4em 1.2em;
+  text-decoration: none;
 
   border: 1px solid $theme-color;
   transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
@@ -128,11 +131,15 @@ h2 {
 
 #about {
   position: relative;
-  margin-top: 626px;
+  margin-top: 408px;
   padding-bottom: 4px;
   color: $font-inverse-color;
 
   background-color: $red;
+
+  @media (min-width: $breakpoint-sm) {
+    margin-top: 626px;
+  }
 
   &::before {
     content: "";
@@ -303,18 +310,7 @@ h2 {
   }
 
   a {
-    display: inline-block;
-    color: $font-inverse-color;
-    font-size: 1.2rem;
-    padding: 0.4em 1.2em;
-    border: 1px solid $font-inverse-color;
-
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: $green;
-      background-color: $font-inverse-color;
-    }
+    @include button($font-inverse-color, $green);
   }
 }
 

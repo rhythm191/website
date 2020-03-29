@@ -2,7 +2,6 @@ import Router from "next/router";
 
 import * as gtag from "../lib/gtag";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/style.scss";
 
 Router.events.on("routeChangeComplete", (url) => gtag.pageview(url));
