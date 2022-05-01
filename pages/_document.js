@@ -16,6 +16,9 @@ export default class extends Document {
             name="google-site-verification"
             content="BRJj_dard5y_F7XJG830_Wyo9f3npeybkl0wcG5z2tY"
           />
+        </Head>
+        <body>
+          <Main />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
           <script
@@ -30,9 +33,6 @@ export default class extends Document {
           `,
             }}
           />
-        </Head>
-        <body>
-          <Main />
           <NextScript />
         </body>
       </html>
