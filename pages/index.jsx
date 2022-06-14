@@ -22,7 +22,8 @@ export default function Index() {
               東京でWeb系の企業でフルスタックエンジニアをやっています。
             </p>
             <p>
-              SIer時代にはJava・Play frameworkを、Web系の企業ではRuby on RailsやNode.jsで開発していました。
+              SIer時代にはJava・Play frameworkを、Web系の企業ではRuby on
+              RailsやNode.jsで開発していました。
               組織改革にも関心があり、新しいツールを導入したり、新しいプロセスを設計したりするのが好きです。
             </p>
           </div>

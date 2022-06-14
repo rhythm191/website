@@ -1,10 +1,9 @@
 {
   "editor.detectIndentation": false,
   "eslint.trace.server": "messages",
-  "eslint.packageManager": "yarn",
   "editor.tabSize": 2,
-  "files.insertFinalNewline": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }
