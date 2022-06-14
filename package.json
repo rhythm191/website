@@ -7,8 +7,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "build:sitemap": "node sitemap_generator.js",
-    "export": "next build && next export && yarn run build:sitemap",
+    "postbuild": "next-sitemap",
+    "export": "next export",
+    "deploy": "next build && next export && next-sitemap",
     "start": "next start"
   },
   "repository": {
@@ -23,7 +24,7 @@
   "homepage": "https://github.com/rhythm191/website#readme",
   "dependencies": {
     "next": "^9.3.1",
-    "nextjs-sitemap-generator": "^0.5.0",
+    "next-sitemap": "^3.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sass": "^1.26.3"
