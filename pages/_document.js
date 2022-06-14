@@ -1,12 +1,12 @@
 import React from "react";
-import Document, { Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 import { GA_TRACKING_ID } from "../lib/gtag";
 
-export default class extends Document {
+export default class MyDocument extends Document {
   render() {
     return (
-      <html lang="ja">
+      <Html lang="ja">
         <Head>
           <meta name="description" content="Rhyztech is tech team powered by rhythm191" />
           <meta name="msapplication-TileColor" content="#0078d7" />
@@ -35,7 +35,7 @@ export default class extends Document {
           />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
