@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <main>
       <Head>
-        <title>Rhyztech</title>
+        <title>Rhyztech - powered by rhythm191</title>
       </Head>
 
       <section id="hero-section">
