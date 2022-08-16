@@ -24,7 +24,7 @@
   "homepage": "https://github.com/rhythm191/website#readme",
   "dependencies": {
     "next": "^12.1.6",
-    "next-sitemap": "^3.0.5",
+    "next-sitemap": "^3.1.18",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "sass": "^1.26.3"
