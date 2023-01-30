@@ -30,7 +30,7 @@
     "sass": "^1.26.3"
   },
   "devDependencies": {
-    "eslint": "^8.30.0",
+    "eslint": "^8.33.0",
     "eslint-config-next": "^13.1.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.19.0",
