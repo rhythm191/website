@@ -85,7 +85,7 @@ export default function Index() {
                 Twitterでつぶやいた一日分のツイートをログメールとして送るサービスです。
                 このログメールはあなたのツイートだけでなく、あなたへのリプライも一緒に表示します。
               </p>
-              <a href="https://onedaytv.herokuapp.com/">visit</a>
+              <a href="#">すでにクローズしました</a>
             </div>
             <div className="product-showcase__image">
               <img src="/images/1daytv.png" alt="" />
