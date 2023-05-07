@@ -8,21 +8,17 @@ export const GoogleAnalytics = () => {
 
   return (
     <>
-      <Script
-        id="google-tag-manager"
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=UA-40723403-4`}
-      />
+      <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-C3FD0GSKRH`} />
       <Script
         id="gtag-script"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'UA-40723403-4', {
-                page_path: window.location.pathname,
+          
+            gtag('config', 'G-C3FD0GSKRH', {
+              page_path: window.location.pathname,
             });
         `,
         }}
